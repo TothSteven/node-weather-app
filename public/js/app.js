@@ -16,7 +16,7 @@ weatherform.addEventListener('submit',(e)=>{
     message2.textContent = '... Loading'
     message3.textContent = ''
 
-    fetch('./weather?address='+encodeURIComponent(location)).then((response)=>{
+    fetch('/weather?address='+encodeURIComponent(location)).then((response)=>{
 
         response.json().then((data)=>{
             
